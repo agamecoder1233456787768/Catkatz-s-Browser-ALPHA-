@@ -1,0 +1,16 @@
+{
+  "JavaScriptEnabled": true,
+  "BlockImages": false,
+  "ClearCookiesOnExit": true,
+  "BlockTrackers": true,
+  "BlockAds": true,
+  "HomeUrl": "bing.com",
+  "SkipWizard": false,
+  "ThemePreset": "Light",
+  "ThemeBackground": "#1E1E1E",
+  "ThemeForeground": "#2563EB",
+  "ThemeAccent": "#3B82F6",
+  "SearchEngine": "Google",
+  "SearchTemplate": "https://www.google.com/search?q={query}",
+  "LiteMode": false
+}

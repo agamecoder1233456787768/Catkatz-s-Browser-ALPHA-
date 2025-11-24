@@ -1,0 +1,5 @@
+C:\Users\birka\Documents\trae_projects\Non chrome\NonChromeBrowser\bin\Release\net9.0-windows\win-x64\publish\NonChromeBrowser.exe
+C:\Users\birka\Documents\trae_projects\Non chrome\NonChromeBrowser\bin\Release\net9.0-windows\win-x64\publish\NonChromeBrowser.dll
+C:\Users\birka\Documents\trae_projects\Non chrome\NonChromeBrowser\bin\Release\net9.0-windows\win-x64\publish\NonChromeBrowser.deps.json
+C:\Users\birka\Documents\trae_projects\Non chrome\NonChromeBrowser\bin\Release\net9.0-windows\win-x64\publish\NonChromeBrowser.runtimeconfig.json
+C:\Users\birka\Documents\trae_projects\Non chrome\NonChromeBrowser\bin\Release\net9.0-windows\win-x64\publish\NonChromeBrowser.pdb

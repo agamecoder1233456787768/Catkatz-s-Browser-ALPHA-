@@ -1,0 +1,39 @@
+<Window x:Class="NonChromeBrowser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Catkatz's Browser! :D" Height="600" Width="1000">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <DockPanel x:Name="TopBar" Grid.Row="0" Margin="6">
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Left">
+                <Button x:Name="BackButton" Content="⟵" Width="40" Margin="0,0,6,0" Click="BackButton_Click"/>
+                <Button x:Name="ForwardButton" Content="⟶" Width="40" Margin="0,0,6,0" Click="ForwardButton_Click"/>
+                <Button x:Name="ReloadButton" Content="⟳" Width="40" Margin="0,0,6,0" Click="ReloadButton_Click"/>
+                <Button x:Name="HomeButton" Content="⌂" Width="40" Margin="0,0,6,0" Click="HomeButton_Click"/>
+                <Button x:Name="NewTabButton" Content="＋" Width="40" Margin="0,0,6,0" Click="NewTabButton_Click"/>
+                <Button x:Name="CloseTabButton" Content="✖" Width="40" Margin="0,0,6,0" Click="CloseTabButton_Click"/>
+                <Button x:Name="IncognitoButton" Content="Incognito" Margin="6,0,0,0" Click="IncognitoButton_Click"/>
+                <Button x:Name="OpenExternalButton" Content="Open Externally" Margin="6,0,0,0" Click="OpenExternalButton_Click"/>
+            </StackPanel>
+            <TextBox x:Name="AddressBar" Margin="6,0" VerticalContentAlignment="Center" KeyDown="AddressBar_KeyDown"/>
+            <Button x:Name="GoButton" Content="Go" Width="60" Margin="6,0,0,0" Click="GoButton_Click"/>
+            <Button x:Name="SettingsButton" Content="Settings" Width="80" Margin="6,0,0,0" Click="SettingsButton_Click"/>
+        </DockPanel>
+        <TabControl x:Name="Tabs" Grid.Row="1"/>
+        <StatusBar x:Name="BottomStatus" Grid.Row="2">
+            <StatusBarItem>
+                <TextBlock x:Name="StatusText"/>
+            </StatusBarItem>
+            <StatusBarItem>
+                <ProgressBar x:Name="Progress" Width="200" Height="16" Minimum="0" Maximum="100"/>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</Window>

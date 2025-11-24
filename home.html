@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Catkatz's Home</title>
+  <style>
+    body{font-family:Segoe UI,Tahoma,Arial;margin:0;background:#1e1e1e;color:#eee}
+    header{padding:24px 16px;background:#2c2c2c}
+    h1{margin:0;font-weight:600}
+    main{padding:24px}
+    .card{background:#2c2c2c;padding:16px;border-radius:8px;max-width:720px}
+    input{width:100%;padding:12px;border-radius:6px;border:1px solid #444;background:#111;color:#eee}
+    .links{margin-top:16px;display:flex;gap:12px;flex-wrap:wrap}
+    a{color:#9cdcfe;text-decoration:none;background:#111;padding:8px 12px;border-radius:6px;border:1px solid #444}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Catkatz's Browser</h1>
+    <div>Private start page</div>
+  </header>
+  <main>
+    <div class="card">
+      <input placeholder="Type a URL and press Enter" id="addr" />
+      <div class="links">
+        <a href="https://duckduckgo.com">DuckDuckGo</a>
+        <a href="https://wikipedia.org">Wikipedia</a>
+        <a href="https://archive.org">Internet Archive</a>
+      </div>
+    </div>
+  </main>
+  <script>
+    document.getElementById('addr').addEventListener('keydown',function(e){
+      if(e.key==='Enter'){
+        var v=this.value.trim();
+        if(!/^https?:/i.test(v)) v='https://'+v;
+        location.href=v;
+      }
+    });
+    window.onerror=function(){return true};
+  </script>
+</body>
+</html>
